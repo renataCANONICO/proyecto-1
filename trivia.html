@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Faustino Míguez</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Proyecto: San Faustino Míguez</h1>
+  <p>
+    Faustino Míguez (1831–1925) fue un sacerdote escolapio, educador y científico español.
+    Fundó el Instituto Calasancio Hijas de la Divina Pastora, dedicado a la educación de las niñas.
+  </p>
+
+  <!-- 🔘 Botón para abrir la trivia -->
+  <button id="open-trivia-btn" onclick="mostrarTrivia()">Abrir trivia sobre Faustino Míguez</button>
+
+  <!-- 📘 Contenedor de la trivia -->
+  <div id="trivia-container">
+    <h2>Trivia: San Faustino Míguez</h2>
+    <form id="trivia-form">
+      <div class="question">
+        <p>1. ¿Dónde nació Faustino Míguez?</p>
+        <div class="options">
+          <label><input type="radio" name="p1" value="a"> Madrid, España</label>
+          <label><input type="radio" name="p1" value="b"> Xamirás, Galicia</label>
+          <label><input type="radio" name="p1" value="c"> Getafe, España</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p>2. ¿Qué congregación fundó Faustino Míguez?</p>
+        <div class="options">
+          <label><input type="radio" name="p2" value="a"> Hijas de la Caridad</label>
+          <label><input type="radio" name="p2" value="b"> Instituto Calasancio Hijas de la Divina Pastora</label>
+          <label><input type="radio" name="p2" value="c"> Hermanas Escolapias</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p>3. ¿En qué campo científico se destacó Faustino Míguez?</p>
+        <div class="options">
+          <label><input type="radio" name="p3" value="a"> Astronomía</label>
+          <label><input type="radio" name="p3" value="b"> Fitoterapia (uso medicinal de plantas)</label>
+          <label><input type="radio" name="p3" value="c"> Matemática</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p>4. ¿Cuál de los siguientes valores escolapios representa mejor su legado educativo?</p>
+        <div class="options">
+          <label><input type="radio" name="p4" value="a"> Fe</label>
+          <label><input type="radio" name="p4" value="b"> Amor al niño y al joven</label>
+          <label><input type="radio" name="p4" value="c"> Justicia</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p>5. ¿En qué año falleció Faustino Míguez?</p>
+        <div class="options">
+          <label><input type="radio" name="p5" value="a"> 1925</label>
+          <label><input type="radio" name="p5" value="b"> 1915</label>
+          <label><input type="radio" name="p5" value="c"> 1931</label>
+        </div>
+      </div>
+
+      <button type="button" id="submit-btn">Enviar respuestas</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="trivia.js"></script>
+</body>
+</html>
